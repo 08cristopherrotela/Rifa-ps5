@@ -74,4 +74,8 @@ buscar.addEventListener("input", () => {
   });
 });
 
-cargarReservas();
+cargarReservas().catch((error) => {
+  console.error(error);
+  alert(error.message);
+  crearNumeros();
+});
