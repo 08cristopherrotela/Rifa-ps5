@@ -1,46 +1,50 @@
-body{
-    font-family:Arial,sans-serif;
-    background:#0d1117;
-    color:white;
-    margin:0;
-    padding:20px;
-    text-align:center;
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
-h1{
-    color:#00a8ff;
+header {
+    background: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
-p{
-    font-size:18px;
+#buscar {
+    width: 90%;
+    max-width: 350px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
 
-#buscar{
-    width:90%;
-    max-width:300px;
-    padding:10px;
-    border-radius:10px;
-    border:none;
-    margin:15px;
+#numeros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 10px;
 }
 
-#numeros{
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(65px,1fr));
-    gap:8px;
-    margin-top:20px;
+.numero {
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    transition: 0.2s;
 }
 
-.numero{
-    background:#1f6feb;
-    color:white;
-    padding:12px;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:bold;
+.numero:hover {
+    transform: scale(1.05);
 }
 
-.vendido{
-    background:#ff3b30;
-    text-decoration:line-through;
+.vendido {
+    background: #dc3545;
 }
