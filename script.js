@@ -26,18 +26,11 @@ function crearNumeros() {
             boton.classList.add("vendido");
         }
 
-        https://wa.me/595983497255?text=${encodeURIComponent(mensaje)
-            if (vendidosLista.includes(numero)) {
-                vendidosLista = vendidosLista.filter(n => n !== numero);
-                boton.classList.remove("vendido");
-            } else {
-                vendidosLista.push(numero);
-                boton.classList.add("vendido");
-            }
-
-            guardar();
-            actualizarContador();
-        };
+    boton.onclick = () => {
+    const mensaje = `Hola, quiero reservar el número ${numero} de la rifa de la PS5`;
+    const url = `https://wa.me/595983497255?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+};
 
         contenedor.appendChild(boton);
     }
