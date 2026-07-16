@@ -26,7 +26,7 @@ function crearNumeros() {
             boton.classList.add("vendido");
         }
 
-        boton.onclick = () => {
+        https://wa.me/595983497255?text=${encodeURIComponent(mensaje)
             if (vendidosLista.includes(numero)) {
                 vendidosLista = vendidosLista.filter(n => n !== numero);
                 boton.classList.remove("vendido");
